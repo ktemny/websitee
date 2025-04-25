@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hanna Portfolio</title>
+  <link rel="stylesheet" href="web.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#" onclick="showSection('home')" data-section="home">Home</a>
+      <a href="#" onclick="showSection('about')" data-section="about">About</a>
+      <a href="#" onclick="showSection('portfolio')" data-section="portfolio">Portfolio</a>
+      <a href="#" onclick="showSection('contact')" data-section="contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="section">
+    <div class="home-content">
+        <div class="text">
+            <h3>Hello, It's me</h3>
+            <h1 id="typing-name"></h1> 
+            <h3>I am an Information Technology student.</h3>
+            <button class="home-btn" onclick="showSection('about')">Next</button> <!-- Home Button -->
+        </div>
+        <div class="image">
+            <img src="pictures/meh.jpg" alt="Your Picture">
+        </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section" style="display: none;">
+    <div class="about-container">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Hi, I'm <strong>Hanna Kate M. Perez</strong>. I'm an Information Technology student, and I'm learning how to create <strong>websites</strong>, <strong>games</strong>, and <strong>design user-friendly interfaces</strong>.</p>
+                <p>Right now, I'm focusing on <strong>front-end development</strong> with <strong>HTML, CSS, and JavaScript</strong> to build modern, responsive websites. I also love <strong>UI/UX design</strong> because I enjoy making things both beautiful and functional. Besides coding, I’m exploring <strong>game development</strong> to bring creative ideas to life! </p>
+                <p>In my free time, I enjoy <strong>reading, watching K-dramas, and learning new programming languages</strong>. These hobbies inspire my creativity and help me relax.</p>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="portfolio" class="section" style="display: none;">
+    <h1 style="color: #ff3385">My Skills</h1><br>
+  <div class="skills-container" id="skills">
+    <div class="skill" id="skill1">
+        <div class="card">
+            <div class="front" style="background-image: url('pictures/html.jpg');"></div>
+            <div class="back">HTML</div>
+        </div>
+    </div>
+    <div class="skill" id="skill2">
+        <div class="card">
+            <div class="front" style="background-image: url('pictures/css.jpg');"></div>
+            <div class="back">CSS</div>
+        </div>
+    </div>
+    <div class="skill" id="skill3">
+        <div class="card">
+            <div class="front" style="background-image: url('pictures/picme.png');"></div>
+            <div class="back">JavaScript</div>
+        </div>
+    </div>
+    <div class="skill" id="skill4">
+        <div class="card">
+            <div class="front" style="background-image: url('pictures/figma.jpg');"></div>
+            <div class="back">Figma</div>
+        </div>
+    </div>
+    <div class="skill" id="skill5">
+        <div class="card">
+            <div class="front" style="background-image: url('pictures/godot.jpg');"></div>
+            <div class="back">Godot</div>
+        </div>
+    </div>
+</div><br>
+  
+<!-- Skills Section -->
+    
+    <section id="projects">
+      <div class="container">
+        <h1 style= "color: #ff3385">My Projects</h1>
+        <div class="projects-list">
+          
+          <div class="project"><img src="pictures/profile.png" /><div class="layer"><h3>WEBSITE</h3></div></div>
+          <div class="project"><img src="pictures/games.png" /><div class="layer"><h3>GAME</h3></div></div>
+          <div class="project"><img src="pictures/fma.png" /><div class="layer"><h3>FIGMA</h3></div></div>
+    
+        </div>
+      </div>
+    </section>
+
+      <h1 style="color: #ff3385;">My Certificates and Achievements</h1><br>
+      <div class="gallery">
+        <div class="slides">
+          <img src="pictures/hypertext.jpg" alt="Certificate 1">
+          <img src="pictures/ccsheet.jpg" alt="Certificate 2">
+          <img src="pictures/javasc.jpg" alt="Certificate 3">
+          <img src="pictures/c.jpg" alt="Certificate 4">
+          <img src="picture/c11.jpg" alt="Certificate 5">
+          <img src="pictures/csharp.jpg" alt="Certificate 6">
+          <img src="pictures/py.jpg" alt="Certificate 7">
+          <img src="pictures/java.jpg" alt="Certificate 8">
+          <img src="pictures/sql.jpg" alt="Certificate 9">
+          <img src="pictures/tech.jpg" alt="Certificate 10">
+        </div>
+      <button class="prev" onclick="changeSlide(-1)">←</button>
+      <button class="next" onclick="changeSlide(1)">→</button>
+    </div>
+    <div class="pagination-dots"></div>
+  </section>
+
+ <!-- Contact Section -->
+<section id="contact" class="section" style="display: block;"> 
+  <div id="contact-container">
+    <!-- Contact Info (now on the right) -->
+    <div id="contact-info">
+      <h2 class="animate-text">Contact Me</h2>
+      <p class="animate-text">If you have any questions or just want to get in touch, feel free to send me a message through the form on the left.</p>
+      <p class="animate-text">I'm looking forward to connecting with you!</p>
+    </div>
+    
+    <!-- Contact Form (now on the left) -->
+    <div class="form-card1 animate-form">
+      <div class="form-card2">
+        <form class="form">
+          <p class="form-heading animate-text"><b>Send a Message</b></p>
+          <div class="form-field">
+            <input required placeholder="Name" class="input-field" type="text" />
+          </div>
+          <div class="form-field">
+            <input required placeholder="Email" class="input-field" type="email" />
+          </div>
+          <div class="form-field">
+            <textarea required placeholder="Message" cols="30" rows="3" class="input-field"></textarea>
+          </div>
+          <button class="sendMessage-btn">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+    
+</section>
+
+  
+  <script src="website.js"></script>
+</body>
+</html>
