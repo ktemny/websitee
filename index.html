@@ -6,11 +6,10 @@
   <title>Hanna Portfolio</title>
   <link rel="stylesheet" href="web.css">
 
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-
-
 <body class="bg-white text-dark">
 
   <header class="bg-light shadow-sm p-3 mb-4">
@@ -43,24 +42,57 @@
       <h2 class="text-center mb-4">About Me</h2>
       <div class="about-content">
         <div class="about-text">
-          <!-- ... no changes inside paragraphs ... -->
+          <p>Hi, I'm <strong>Hanna Kate M. Perez</strong>. I'm an Information Technology student, and I'm learning how to create <strong>websites</strong>, <strong>games</strong>, and <strong>design user-friendly interfaces</strong>.</p>
+          <p>Right now, I'm focusing on <strong>front-end development</strong> with <strong>HTML, CSS, and JavaScript</strong> to build modern, responsive websites. I also love <strong>UI/UX design</strong> because I enjoy making things both beautiful and functional. Besides coding, I’m exploring <strong>game development</strong> to bring creative ideas to life! </p>
+          <p>In my free time, I enjoy <strong>reading, watching K-dramas, and learning new programming languages</strong>. These hobbies inspire my creativity and help me relax.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Portfolio -->
+  <!-- Skills Section -->
   <section id="portfolio" class="section container my-5" style="display: none;">
     <h1 class="text-center text-danger mb-4">My Skills</h1>
     <div class="skills-container row justify-content-center g-3">
-      <!-- Cards stay same, just grouped as Bootstrap grid if you want later -->
-    </div>
+      <div class="skill col-sm-6 col-md-4 col-lg-2">
+        <div class="card">
+          <div class="front" style="background-image: url('pictures/html.jpg');"></div>
+          <div class="back">HTML</div>
+        </div>
+      </div>
+      <div class="skill col-sm-6 col-md-4 col-lg-2">
+        <div class="card">
+          <div class="front" style="background-image: url('pictures/css.jpg');"></div>
+          <div class="back">CSS</div>
+        </div>
+      </div>
+      <div class="skill col-sm-6 col-md-4 col-lg-2">
+        <div class="card">
+          <div class="front" style="background-image: url('pictures/picme.png');"></div>
+          <div class="back">JavaScript</div>
+        </div>
+      </div>
+      <div class="skill col-sm-6 col-md-4 col-lg-2">
+        <div class="card">
+          <div class="front" style="background-image: url('pictures/figma.jpg');"></div>
+          <div class="back">Figma</div>
+        </div>
+      </div>
+      <div class="skill col-sm-6 col-md-4 col-lg-2">
+        <div class="card">
+          <div class="front" style="background-image: url('pictures/godot.jpg');"></div>
+          <div class="back">Godot</div>
+        </div>
+      </div>
+    </div><br>
 
     <section id="projects" class="mt-5">
       <div class="container bg-light p-4 rounded shadow">
         <h1 class="text-center text-danger">My Projects</h1>
         <div class="projects-list d-flex flex-wrap justify-content-center gap-3">
-          <!-- Keep your existing project boxes -->
+          <div class="project"><img src="pictures/profile.png" /><div class="layer"><h3>WEBSITE</h3></div></div>
+          <div class="project"><img src="pictures/games.png" /><div class="layer"><h3>GAME</h3></div></div>
+          <div class="project"><img src="pictures/fma.png" /><div class="layer"><h3>FIGMA</h3></div></div>
         </div>
       </div>
     </section>
@@ -68,7 +100,16 @@
     <h1 class="text-center text-danger mt-5">My Certificates and Achievements</h1><br>
     <div class="gallery container bg-white p-4 rounded shadow">
       <div class="slides d-flex flex-nowrap overflow-auto gap-3">
-        <!-- Your images stay as-is -->
+        <img src="pictures/hypertext.jpg" alt="Certificate 1">
+        <img src="pictures/ccsheet.jpg" alt="Certificate 2">
+        <img src="pictures/javasc.jpg" alt="Certificate 3">
+        <img src="pictures/c.jpg" alt="Certificate 4">
+        <img src="pictures/c11.jpg" alt="Certificate 5">
+        <img src="pictures/csharp.jpg" alt="Certificate 6">
+        <img src="pictures/py.jpg" alt="Certificate 7">
+        <img src="pictures/java.jpg" alt="Certificate 8">
+        <img src="pictures/sql.jpg" alt="Certificate 9">
+        <img src="pictures/tech.jpg" alt="Certificate 10">
       </div>
       <div class="text-center mt-3">
         <button class="btn btn-outline-primary me-2" onclick="changeSlide(-1)">←</button>
@@ -77,15 +118,14 @@
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="section container my-5" style="display: block;"> 
+  <!-- Contact Section -->
+  <section id="contact" class="section container my-5" style="display: block;">
     <div id="contact-container" class="row g-4">
       <div id="contact-info" class="col-md-6 bg-light p-4 rounded shadow">
         <h2 class="animate-text text-primary">Contact Me</h2>
-        <p class="animate-text">If you have any questions...</p>
+        <p class="animate-text">If you have any questions or just want to get in touch, feel free to send me a message through the form on the left.</p>
         <p class="animate-text">I'm looking forward to connecting with you!</p>
       </div>
-
       <div class="form-card1 animate-form col-md-6">
         <div class="form-card2 bg-white p-4 rounded shadow">
           <form class="form">
@@ -106,8 +146,6 @@
     </div>
   </section>
 
-
-  
   <script src="website.js"></script>
 </body>
 </html>
